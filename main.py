@@ -15,21 +15,21 @@ import os
 import random
 from typing import Optional
 
-from cz3005_assignment.graph_loader import load_graph_data
-from cz3005_assignment.rcsp_search import (
+from helpers.graph_loader import load_graph_data
+from helpers.rcsp_search import (
     astar_shortest_path_with_energy,
     dijkstra_shortest_path,
     ucs_shortest_path_with_energy,
 )
-from cz3005_assignment.gridworld import GridWorld
-from cz3005_assignment.dp_planning import (
+from helpers.gridworld import GridWorld
+from helpers.dp_planning import (
     value_iteration,
     policy_iteration,
     print_value_table,
     print_policy_table,
 )
-from cz3005_assignment.mc_rl import mc_control_every_visit
-from cz3005_assignment.q_learning import q_learning
+from helpers.mc_rl import mc_control_every_visit
+from helpers.q_learning import q_learning
 
 
 def _parse_args() -> argparse.Namespace:
